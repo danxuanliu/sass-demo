@@ -1,0 +1,87 @@
+@import "utilities";
+@import "config";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+*{  
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    
+    
+    .container{
+        background-color: $mymidblue;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo{
+            color:$textcolor;
+            font-size: 3rem;
+        }
+        ul{
+            display: flex;
+            list-style-type:none;
+            position: relative;
+            li{
+                margin-left: 20px;
+                color: $textcolor;
+                font-size: 1.5rem;
+            }
+            li:hover{
+                color:$mylightblue;
+                cursor: pointer;
+                transform: scale(0.98);
+            }
+        }
+    }
+}
+header{
+    .container{
+        background-color: $mydeepblue;
+        display: flex;
+        height: auto;
+        min-height: 400px;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+        color: $textcolor;
+        img{
+            width: 200px;
+            height: 200px;
+        }
+        .text{margin-right: 50px;}
+        h1{
+            font-size: 4rem;
+            }
+        p{
+            line-height: 2;
+            font-size: 1.2rem;
+        }
+    }
+}
+main{
+    .container{
+        padding: 20px;
+        background-color: $mylightblue;
+        color:$textcolor;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        div{
+            border-radius: 5%;
+            background-color: $mydeepblue;
+            box-shadow: 0 3px 3px 3px rgba(0,0,0,0.3);
+            margin: 20px 10px;
+            padding: 15px 20px;
+        }
+    }
+}
+@import"mobile";
